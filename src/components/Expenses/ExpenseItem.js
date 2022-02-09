@@ -5,15 +5,10 @@ import ExpenseDate from "./ExpenseDate";
 import Card from "../UI/Card";
 
 const ExpenseItem = props => {
-
   const [title, setTitle] = useState(props.title);
 
-  console.log('this is title in the expense item' , title);
-  
   const clickHandler = () => {
-    console.log('calling clickHandler');
     setTitle('updated title');
-    console.log('this is title in the clickhandler: ', title);
   }
 
   return (

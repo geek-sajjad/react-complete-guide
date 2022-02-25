@@ -57,17 +57,14 @@ const Login = props => {
   }, [emailIsValid, passwordIsValid]);
 
   const emailChangeHandler = event => {
-    // setEnteredEmail(event.target.value);
     emailDispatch({ type: 'USER_INPUT', val: event.target.value });
   };
 
   const passwordChangeHandler = event => {
-    // setEnteredPassword(event.target.value);
     passwordDispatch({type: 'USER_INPUT', val: event.target.value });
   };
 
   const validateEmailHandler = () => {
-    // setEmailIsValid(enteredEmail.includes('@'));
     emailDispatch({ type: 'INPUT_BLUR' });
   };
 
